@@ -1,0 +1,178 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Course/Projects/UART/Modelsim
+vbaud_gen
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1752869132
+!i10b 1
+!s100 DlMcXnb4R@c`9l[QGjPb^1
+I_PD>aQZO^Mg0A@c?SF;cM3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 !s105 baud_gen_sv_unit
+S1
+R0
+w1752868861
+Z4 8E:/Course/Projects/UART/Modelsim/baud_gen.sv
+Z5 FE:/Course/Projects/UART/Modelsim/baud_gen.sv
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1752869132.000000
+Z7 !s107 E:/Course/Projects/UART/Modelsim/baud_gen.sv|
+Z8 !s90 -reportprogress|300|-work|work|-sv|-stats=none|E:/Course/Projects/UART/Modelsim/baud_gen.sv|
+!i113 1
+Z9 o-work work -sv
+Z10 tCvgOpt 0
+vbaud_gen_16x
+R1
+!s110 1752869133
+!i10b 1
+!s100 C=]KbfhQk?^45nI]jG:B_0
+IF>=l<Jo_]CkGFKS8Q[N>R0
+R2
+!s105 baud_gen_16x_sv_unit
+S1
+R0
+w1752869009
+8E:/Course/Projects/UART/Modelsim/baud_gen_16x.sv
+FE:/Course/Projects/UART/Modelsim/baud_gen_16x.sv
+L0 3
+R6
+r1
+!s85 0
+31
+!s108 1752869133.000000
+!s107 E:/Course/Projects/UART/Modelsim/baud_gen_16x.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|E:/Course/Projects/UART/Modelsim/baud_gen_16x.sv|
+!i113 1
+R9
+R10
+vbaud_generator
+R1
+Z11 !s110 1752943665
+!i10b 1
+!s100 1Q1YnBW]Ocid6XZP^H6e[0
+IjO4zdPfkIF:AI1TCV^_=f1
+R2
+R3
+S1
+R0
+w1752923912
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+Z12 !s108 1752943665.000000
+R7
+R8
+!i113 1
+R9
+R10
+vuart_rx
+R1
+R11
+!i10b 1
+!s100 BMdJY1^MHGbRA7A<9FC>F1
+IZNgd<TV_?`bAoaG`obi9_2
+R2
+!s105 uart_rx_sv_unit
+S1
+R0
+w1752923580
+8E:/Course/Projects/UART/Modelsim/uart_rx.sv
+FE:/Course/Projects/UART/Modelsim/uart_rx.sv
+L0 1
+R6
+r1
+!s85 0
+31
+R12
+!s107 E:/Course/Projects/UART/Modelsim/uart_rx.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|E:/Course/Projects/UART/Modelsim/uart_rx.sv|
+!i113 1
+R9
+R10
+vuart_top
+R1
+R11
+!i10b 1
+!s100 ^@zz`1FNROj=S?h6V5hVA3
+I5a;@kO5F_65j;<g08MP^z1
+R2
+!s105 uart_top_sv_unit
+S1
+R0
+w1752942239
+8E:/Course/Projects/UART/Modelsim/uart_top.sv
+FE:/Course/Projects/UART/Modelsim/uart_top.sv
+L0 1
+R6
+r1
+!s85 0
+31
+R12
+!s107 E:/Course/Projects/UART/Modelsim/uart_top.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|E:/Course/Projects/UART/Modelsim/uart_top.sv|
+!i113 1
+R9
+R10
+vuart_top_tb
+R1
+R11
+!i10b 1
+!s100 Vk=<]C;N=cZ[<FnE8`V?71
+IeW1VY<4iET>F^VcEF[fbZ3
+R2
+!s105 uart_top_tb_sv_unit
+S1
+R0
+w1752923744
+8E:/Course/Projects/UART/Modelsim/uart_top_tb.sv
+FE:/Course/Projects/UART/Modelsim/uart_top_tb.sv
+L0 3
+R6
+r1
+!s85 0
+31
+R12
+!s107 E:/Course/Projects/UART/Modelsim/uart_top_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|E:/Course/Projects/UART/Modelsim/uart_top_tb.sv|
+!i113 1
+R9
+R10
+vuart_tx
+R1
+R11
+!i10b 1
+!s100 zQ]@VSXE:Xe2f;`E80bLT1
+IUclRHeTOdeA4SXhEN`l362
+R2
+!s105 uart_tx_sv_unit
+S1
+R0
+w1752861303
+8E:/Course/Projects/UART/Modelsim/uart_tx.sv
+FE:/Course/Projects/UART/Modelsim/uart_tx.sv
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1752943664.000000
+!s107 E:/Course/Projects/UART/Modelsim/uart_tx.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|E:/Course/Projects/UART/Modelsim/uart_tx.sv|
+!i113 1
+R9
+R10

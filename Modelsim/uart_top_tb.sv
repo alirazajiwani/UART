@@ -1,0 +1,102 @@
+`timescale 1ns/1ps
+
+module uart_top_tb;
+
+    // Parameters
+    parameter CLK_FREQ = 10_000_000;   // 10 MHz for faster simulation
+    parameter BAUD_RATE = 9600;
+    parameter DATABITS = 8;
+    parameter PARITY_EN = 1;
+    parameter PARITY_TYPE = 0;         // 0 = even, 1 = odd
+
+    // Clock period
+    localparam CLK_PERIOD = 1_000_000_000 / CLK_FREQ; // in ns
+
+    // DUT signals
+    logic clk;
+    logic reset;
+    logic tx_en;
+    logic [DATABITS-1:0] tx_data_in;
+    logic tx_data;
+    logic tx_busy;
+    logic rx_data;
+    logic [DATABITS-1:0] rx_data_out;
+    logic rx_done;
+    logic parity_error;
+    logic stop_error;
+    logic baud_tick_dbg;
+    logic baud_tick_16x_dbg;
+
+    // Instantiate DUT
+    uart_top #(
+        .SYS_FREQ(CLK_FREQ),
+        .BAUD_RATE(BAUD_RATE),
+        .DATABITS(DATABITS),
+        .PARITY_EN(PARITY_EN),
+        .PARITY_TYPE(PARITY_TYPE)
+    ) dut (
+        .clk(clk),
+        .reset(reset),
+        .tx_en(tx_en),
+        .tx_data_in(tx_data_in),
+        .tx_data(tx_data),
+        .tx_busy(tx_busy),
+        .rx_data(rx_data),
+        .rx_data_out(rx_data_out),
+        .rx_done(rx_done),
+        .parity_error(parity_error),
+        .stop_error(stop_error),
+	.baud_tick_dbg(baud_tick_dbg),
+	.baud_tick_16x_dbg(baud_tick_16x_dbg)
+    );
+
+    // Clock generation
+    always #(CLK_PERIOD/2) clk = ~clk;
+    initial clk = 0;
+
+
+    // Test procedure
+    initial begin
+        $display("UART Testbench Started");
+        clk = 0;
+        reset = 1;
+        tx_en = 0;
+        tx_data_in = 8'h00;
+        #200;
+        reset = 0;
+
+        // Connect transmitter to receiver (loopback)
+        force rx_data = tx_data;
+
+        // Send a byte
+        @(posedge clk);
+        tx_data_in = 8'hF5;
+        tx_en = 1;
+
+        @(posedge clk);
+        tx_en = 0;
+
+        // Wait for transmission + reception
+        wait (rx_done);
+
+        // Display results
+        $display("Sent     : 0x%0h", 8'hF5);
+        $display("Received : 0x%0h", rx_data_out);
+        $display("Parity Error: %0b", parity_error);
+        $display("Stop Error  : %0b", stop_error);
+
+        // Test result
+        if (rx_data_out == 8'hF5 && !parity_error && !stop_error) begin
+            $display("? UART Test Passed!");
+        end else begin
+            $display("? UART Test Failed!");
+        end
+
+        #1000;
+
+        $stop;
+	
+    end
+
+endmodule
+

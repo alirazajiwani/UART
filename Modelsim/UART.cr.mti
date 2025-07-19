@@ -1,0 +1,36 @@
+E:/Course/Projects/UART/Modelsim/uart_top.sv {1 {vlog -work work -sv -stats=none E:/Course/Projects/UART/Modelsim/uart_top.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module uart_top
+
+Top level modules:
+	uart_top
+
+} {} {}} E:/Course/Projects/UART/Modelsim/uart_tx.sv {1 {vlog -work work -sv -stats=none E:/Course/Projects/UART/Modelsim/uart_tx.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module uart_tx
+
+Top level modules:
+	uart_tx
+
+} {} {}} E:/Course/Projects/UART/Modelsim/uart_top_tb.sv {1 {vlog -work work -sv -stats=none E:/Course/Projects/UART/Modelsim/uart_top_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module uart_top_tb
+
+Top level modules:
+	uart_top_tb
+
+} {} {}} E:/Course/Projects/UART/Modelsim/uart_rx.sv {1 {vlog -work work -sv -stats=none E:/Course/Projects/UART/Modelsim/uart_rx.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module uart_rx
+
+Top level modules:
+	uart_rx
+
+} {} {}} E:/Course/Projects/UART/Modelsim/baud_gen.sv {1 {vlog -work work -sv -stats=none E:/Course/Projects/UART/Modelsim/baud_gen.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module baud_generator
+
+Top level modules:
+	baud_generator
+
+} {} {}}
