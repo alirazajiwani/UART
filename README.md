@@ -38,4 +38,4 @@ And, the waveforms:
 
 ---
 
-**NOTE:** For Further knowledge, please check '\UART_documentation.docx'
+**NOTE:** For Further knowledge, please check '/UART_documentation.docx'
