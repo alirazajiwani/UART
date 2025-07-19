@@ -36,4 +36,6 @@ And, the waveforms:
 <img width="792" height="228" alt="Timing Signals" src="https://github.com/user-attachments/assets/38a6a63e-4ea2-4b38-a5df-ef369415d387" />
 
 
+---
 
+**NOTE:** For Further knowledge, please check '\UART_documentation.docx'
