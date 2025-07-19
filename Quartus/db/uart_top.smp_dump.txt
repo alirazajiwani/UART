@@ -1,0 +1,16 @@
+
+State Machine - |uart_top|uart_rx:rx_inst|CS
+Name CS.PARITY CS.DATA CS.START CS.IDLE CS.STOP 
+CS.IDLE 0 0 0 0 0 
+CS.START 0 0 1 1 0 
+CS.DATA 0 1 0 1 0 
+CS.PARITY 1 0 0 1 0 
+CS.STOP 0 0 0 1 1 
+
+State Machine - |uart_top|uart_tx:tx_inst|CS
+Name CS.PARITY CS.DATA CS.START CS.IDLE CS.STOP 
+CS.IDLE 0 0 0 0 0 
+CS.START 0 0 1 1 0 
+CS.DATA 0 1 0 1 0 
+CS.PARITY 1 0 0 1 0 
+CS.STOP 0 0 0 1 1 
