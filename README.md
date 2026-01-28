@@ -119,10 +119,11 @@ The design has been thoroughly verified with:
 - **Successful back-to-back transmission** without data loss
 
 Sample test output shows comprehensive pass/fail tracking with detailed transaction logging.
-<img width="586" height="480" alt="image" src="https://github.com/user-attachments/assets/2063d343-f147-4e27-b7c6-071713051145" />
+<img width="586" height="480" alt="image" src="https://github.com/user-attachments/assets/81c5fcbb-60e3-495d-a7e6-26ec3d2fc8fc" />
 Simulation Log
 
-<img width="1095" height="915" alt="image" src="https://github.com/user-attachments/assets/1588c842-ba89-47e7-8bde-f838333afbcb" />
+<img width="1095" height="201" alt="image" src="https://github.com/user-attachments/assets/fee5aaaa-a929-4205-81d4-b7de7a81da93" />
+
 Waveform
 
 ## 📁 File Structure
