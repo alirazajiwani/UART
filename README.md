@@ -44,10 +44,10 @@ The UART core consists of three primary components:
 - Comprehensive error checking
 
 ## Diagrams
-### RTL Diagram
+#### RTL Diagram
 <img width="1050" height="484" alt="image" src="https://github.com/user-attachments/assets/0c69e1bb-6137-40ef-af64-1df28d875a28" />
 
-### State Diagram
+#### State Diagram
 <img width="845" height="309" alt="image" src="https://github.com/user-attachments/assets/47fbbd02-a050-4974-adcb-699cbc03f1d3" />
 
 ## ⚙️ Parameters
@@ -119,12 +119,11 @@ The design has been thoroughly verified with:
 - **Successful back-to-back transmission** without data loss
 
 Sample test output shows comprehensive pass/fail tracking with detailed transaction logging.
+#### Simulation Log
 <img width="586" height="480" alt="image" src="https://github.com/user-attachments/assets/81c5fcbb-60e3-495d-a7e6-26ec3d2fc8fc" />
-Simulation Log
 
+#### Waveform
 <img width="1095" height="201" alt="image" src="https://github.com/user-attachments/assets/fee5aaaa-a929-4205-81d4-b7de7a81da93" />
-
-Waveform
 
 ## 📁 File Structure
 
